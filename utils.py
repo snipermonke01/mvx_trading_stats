@@ -31,16 +31,13 @@ class TelegramManager:
 
 def make_query(query: str):
     """
-    Get short and long positions for a given chain
-
+    Post formatted query to mvx stats subgraph
+    
     Parameters
     ----------
         query: str
             Formatted subgraph query
-        is_arbritrum: bool
-            Pass True to get arbitrum short and long positions
-        is_avax: bool
-            Pass True to get avax short and long positions
+
     """
 
     url = "https://api.thegraph.com/subgraphs/name/sdcrypt0/mvx-subgraph-core-v2"
